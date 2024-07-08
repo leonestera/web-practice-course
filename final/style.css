@@ -1,0 +1,102 @@
+p {
+    margin: 0;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.logo-img {
+    height: 60px;
+}
+
+.header_nav {
+    width: 700px;
+}
+
+.header_nav_wrapper {
+    width: 635px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_nav_link {
+    font-size: 22px;
+}
+
+.container {
+    width: 100%;
+    background: url(assets/icons/background.jpg);
+    background-size: cover;
+}
+
+.description-txt {
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 300px;
+}
+
+#play {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.current-song {
+    padding: 20px 0px 20px 150px;
+    display: flex;
+    align-items: center;
+}
+
+.play-button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.song-name {
+    font-size: 26px;
+}
+
+.singer-album {
+    padding-left: 170px;
+    background-color: rgba(46, 34, 109, 0.7);
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 80px;
+}
+
+.album-img {
+    height: 60px;
+    margin-right: 20px;
+}
+
+.types-title {
+    font-size: 32px;
+    text-align: center;
+}
+
+.types-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.types {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(209, 209, 250);
+}
+
+.type-title {
+    font-size: 36px;
+    margin-top: 75px;
+    
+}
+
