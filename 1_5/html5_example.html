@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 приклад</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Приклад сторінки HTML5</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#section1">Роздііл 1</a></li>
+            <li><a href="#section2">Роздііл 2</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="#section1">
+            <h2>Роздііл 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nihil quo nisi quae dolore,
+                 eligendi mollitia nesciunt illo veritatis molestiae cum dicta. Vel vitae eius ullam,
+                  veritatis ipsum voluptas.</p>
+                  <figure>
+                    <img src="exemple_image.jpg" alt="Приклад зображення">
+                     <figcaption>Підпис до зображення</figcaption>
+                  </figure>
+        </section>
+        <section id="#section2">
+            <h2>Роздііл 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nihil quo nisi quae dolore,
+                 eligendi mollitia nesciunt illo veritatis molestiae cum dicta. Vel vitae eius ullam,
+                  veritatis ipsum voluptas.</p>
+                  <video controls>
+                    <source src="exemple_video.mp4" type="video/mp4">
+                    Ваш браузер не підтримує відео.
+                  </video>
+        </section>
+        <section id="contact">
+            <h2>Форма контакту</h2>
+            <form >
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="birthdata">Дата народження:</label>
+                <input type="data" id="birthdata" name="birthdata">
+
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+        <section id="multimedia">
+            <h2>Мультімедіа</h2>
+
+            <h3>Аудіо</h3>
+            <audio controls>
+                <source srs="exemple_audio.mp3" type="audio/mpeg">
+                Ваш браузер не підтримує аудіо.
+            </audio>
+            <h3>Канвас</h3>
+            <canvas id="exampleCanvas" width="300" height="200">
+                Ваш браузер не підтримує канвас. Оновіть браузер або скористайтеся іншим.
+            </canvas>
+        </section>
+    </main>
+    <footer>
+        <p>Всі права захищені &copy; 2024</p>
+    </footer>
+</body>
+</html>
