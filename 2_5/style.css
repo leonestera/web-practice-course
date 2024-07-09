@@ -1,0 +1,23 @@
+/* Стилізація по типу елемента */
+p {
+    font-family: Arial, sans-serif;
+}
+/* Стилізація по класу */
+.main-heading {
+    font-size: 2rem;
+    text-decoration: underline;
+    font-style: italic;
+    
+}
+/* Стилізація по ID */
+#example {
+    text-decoration: underline;
+}
+/* Стилізація по атрибуту */
+.highlight {
+    background-color: yellow;
+}
+/* Стилізація за допомогою дочірнього елемента */
+section > h2 {
+    color: blue;
+   }
