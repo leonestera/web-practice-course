@@ -1,0 +1,31 @@
+$primary-color: #ff6600;
+h1 {
+    color: $primary-color;
+}
+a {
+    color: $primary-color;
+    &:hover {
+        color: darken($primary-color, 10%);
+    }
+}
+div {
+    height: 300px;
+    width: 900px;
+}
+$primary-color: lightgreen;  
+    section {
+        .highlight{
+            background-color: yellow;
+            border-width: bold;
+        }
+        color: $primary-color;
+        p {
+            color: darken($primary-color, 50%);
+            font-style: italic;
+            font-size: 18px; 
+            font-weight: bold;           
+        }
+    }
+    
+   
+

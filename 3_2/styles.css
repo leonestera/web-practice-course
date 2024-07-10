@@ -1,0 +1,29 @@
+h1 {
+  color: #ff6600;
+}
+
+a {
+  color: #ff6600;
+}
+a:hover {
+  color: #cc5200;
+}
+
+div {
+  height: 300px;
+  width: 900px;
+}
+
+section {
+  color: lightgreen;
+}
+section .highlight {
+  background-color: yellow;
+  border-width: bold;
+}
+section p {
+  color: #116e11;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: bold;
+}/*# sourceMappingURL=styles.css.map */
