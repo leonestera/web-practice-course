@@ -1,0 +1,32 @@
+.grid-container {
+display: grid;
+grid-template-columns: 200px 1fr;
+grid-template-rows: auto 1fr auto;
+grid-template-areas: "header header" "nav main" "footer footer";
+grid-gap: 10px;
+}
+header {
+    grid-area: header;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+nav {
+    grid-area: nav;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+main {
+    grid-area: main;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+aside {
+    grid-area: aside;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+footer {
+    grid-area: footer;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
