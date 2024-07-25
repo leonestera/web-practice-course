@@ -1,8 +1,23 @@
 /* Стилізація по типу елемента */
 p {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 /* Стилізація по класу */
+body {
+    background-color: grey;
+    opacity: 1.0;
+}
+.header_nav_wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    opacity: 0.7;
+    height: 100px;
+
+}
 .main-heading {
     font-size: 2rem;
     text-decoration: underline;
@@ -12,12 +27,31 @@ p {
 /* Стилізація по ID */
 #example {
     text-decoration: underline;
+    color: blue;
 }
 /* Стилізація по атрибуту */
 .highlight {
-    background-color: yellow;
+    background-color: rgb(128, 128, 14);
 }
 /* Стилізація за допомогою дочірнього елемента */
-section > h2 {
+/* section > h2 {
     color: blue;
+   } */
+   article {
+    font-family: Tahoma, sans-serif;
+    font-size: large;
+    background-color: lightcyan;
+   }
+   .footer {
+    background-color: black;
+    height: 100px;display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .footer_text {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-size: large;
+    color: white;
    }
