@@ -5,22 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Флексбокс пример</title>
     <style>
+        /* @media(main-width=320px)and(max-widht=424px){
+            .item {
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            margin: 10px;
+            color: whitesmoke;
+            /* display: flex;
+            justify-content: center;
+            align-items: center;             */
+            /* font-size: 38px;
+            border-radius: 50%;
+        }   
+        }
         .container {
             display: flex;
             flex-direction: column;
             /* flex-wrap: wrap;
             justify-content: space-between; */
-            align-items: center;
+            /* align-items: center; */
             /* text-align: center; */
-        }
+        /* }
         .h {
             align-items: center;
         }
         .row {
             display: flex;
             justify-content: space-between;
-            width: 100%;
-        }
+            width: 100%; */
+        /* }
         .item {
             width: 300px;
             height: 300px;
@@ -32,11 +46,83 @@
             align-items: center;            
             font-size: 38px;
             border-radius: 50%;
-        }
+        } */
+        /* /* .container_row {
+            width: 100%;
+        } * */
+         body {
+            background-color: aliceblue;
+            margin: 0;
+            padding: 0;
+            font-family: Tahoma, sans-serif;
+         }
+         .container {
+            padding: 20px;
+            margin: auto;
+            max-width: 1200px;
+         }
+         h1 {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 50px;
+            text-align: center;
+         }
+         p {
+            font-size: 22px;
+            line-height: 1.6;
+         }
+         .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 20px;
 
+         }
+         .item {
+            /* flex: 1 1 calc(33,33% - 20px); */
+            background-color: blue;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+           justify-content: center;
+           flex-shrink: 0;
+            border-radius: 50%;
+            font-size: 30px;
+            color: white;
+            width: 300px;
+            height: 300px;
+         }
+         @media (max-width: 320px){
+            width: 100%;
+            height: auto;
+         }
+         @media (max-width: 768px){
+            /* .item {
+                flex: 1 1 calc(50% - 20px);
+            } */
+            h1 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 20px;
+            }
+         }
+         @media (max-width: 480px){
+            /* .item {
+                flex: 1 1 calc(100%);
+            } */
+            h1 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 18px;
+            }
+         }
 </style>
 </head>
-<body style="background-color: aliceblue;">
+<body>
     <div class="container">
     <h1 style="font-weight: bold; font-style: italic; font-size: 50px;">Наші інтереси</h1>
     <p style="font-size: 22px;font-family: Tahoma, sans-serif;"><b>
