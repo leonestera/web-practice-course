@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header with Burger Menu</title>
+    <!-- <link rel="stylesheet" href="leer.css"> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+</head>
+<style>
+    html,
+ body {
+    height: 100%;
+    font-size: 15px;
+ }
+    .swiper-container {
+        width: 1000PX;
+        height: 300px;
+    }
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ccc;
+    }
+    .swiper-slide img {
+    width: 58%;
+    object-fit: cover;
+ }
+ .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 140px !important;
+    left: auto;
+ }
+ .swiper-button-prev, .swiper-rtl .swiper-button-next{
+    left: 140px !important;
+    right: auto;
+ }
+</style>
+<body>
+    <section id="music-type">
+        <h2 class="types-title">Зробіть свій вибір</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slade"><img class="type-logo" src="assets/Caracal.jpg" alt="img"><h3 class="type tytle">80'ті</h3></div>
+                <div class="swiper-slade"><img class="type-logo" src="assets/Elephants.jpg" alt="img"><h3 class="type tytle">90'ті</h3></div>
+                <div class="swiper-slade"><img class="type-logo" src="assets/Giraffes.jpg" alt="img"><h3 class="type tytle">Сучасні</h3></div>
+                <div class="swiper-slade"><img class="type-logo" src="assets/Leopard.jpg" alt="img"><h3 class="type tytle">Діско-ні</h3></div>
+                <div class="swiper-slade"><img class="type-logo" src="assets/lions.jpg" alt="img"><h3 class="type tytle">Поп-ні</h3></div>
+                <div class="swiper-slade"><img class="type-logo" src="assets/tigrs.jpg" alt="img"><h3 class="type tytle">80'ті</h3></div>
+            </div>
+                <!-- <div class="swiper-slide">
+                    <article class="types">
+                        <img class="type-logo" src="assets/Caracal.jpg" alt="img">
+                        <h3 class="type-title">80'ті</h3>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="types">
+                        <img class="type-logo" src="assets/Giraffes.jpg" alt="img">
+                        <h3 class="type-title">90'ті</h3>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="types">
+                        <img class="type-logo" src="assets/Leopard.jpg" alt="img">
+                        <h3 class="type-title">Сучасні</h3>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="types">
+                        <img class="type-logo" src="assets/lions.jpg" alt="img">
+                        <h3 class="type-title">Діско-ні</h3>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="types">
+                        <img class="type-logo" src="assets/tigrs.jpg" alt="img">
+                        <h3 class="type-title">Поп-ні</h3>
+                    </article>
+                </div>
+            </div> -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var swiperContainer = document.querySelector('.swiper-container');
+            if (swiperContainer) {
+                var swiper = new Swiper('.swiper', {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,                        
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    breakpoints: {
+                        768: {
+                        slidesPerView: 3,
+                        spaceBetween: 20, 
+                        },
+                    },
+                });
+
+            }else{
+                console.error('Swiper container not fuond ');
+            }
+        });
+    </script>
+</body>
+</html>

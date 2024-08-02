@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="youtube.css">
+    <title>swiper</title>
+</head>
+<body>
+    <div class="swiper mySwiper">
+        <div class="sweiper-wrapper">
+            <div class="swiper-slide"><img src="assets/Caracal.jpg"></div>          
+            <div class="swiper-slide"><img src="assets/Elephants.jpg"></div>          
+            <div class="swiper-slide"><img src="assets/Giraffes.jpg"></div>          
+            <div class="swiper-slide"><img src="assets/Leopard.jpg"></div>          
+            <div class="swiper-slide"><img src="assets/lions.jpg"></div>          
+            <div class="swiper-slide"><img src="assets/tigrs.jpg"></div>         
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>              
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var swiperContainer = document.querySelector('.swiper-container');
+            if (swiperContainer) {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,//ADD
+                spaceBetween: 30,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,  //ADD
+                },
+            });
+        }
+        
+                mousewhell: true,
+                keyboard: true,
+            });
+    </script>
+    <!-- <div class="wraper">
+        <h1 class="tytle">Slaider sweiper</h1>
+        <div class="lmage-slider swiper-container">
+            <div class="lmage-slider_wraper swiper-wraper">
+                <div class="lmage-slider_slide swiper-slide">
+                    <div class="lmage-slider_image"> -->
+                      <!-- <img src="assets/Caracal.jpg" alt="1">  
+                    </div>
+                </div>
+                <div class="lmage-slider_slide swiper-slide">
+                    <div class="lmage-slider_image">
+                      <img src="assets/Elephants.jpg" alt="2"> 
+                    </div> 
+                </div>
+                <div class="lmage-slider_slide swiper-slide">
+                    <div class="lmage-slider_image">
+                      <img src="assets/Giraffes.jpg" alt="3"> 
+                    </div> 
+                </div>
+                <div class="lmage-slider_slide swiper-slide">
+                    <div class="lmage-slider_image">
+                      <img src="assets/Leopard.jpg" alt="4">
+                    </div>
+                </div>
+                <div class="lmage-slider_slide swiper-slide">
+                    <div class="lmage-slider_image">
+                      <img src="assets/lions.jpg" alt="5"> 
+                    </div>
+                </div>
+                <div class="lmage-slider_slide swiper-slide">
+                    <div class="lmage-slider_image">
+                      <img src="assets/tigrs.jpg" alt="6"> 
+                    </div>
+                </div>                 
+            </div>
+        </div>
+
+    </div> -->
+    <!-- <script src="script.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>  -->
+</body>
+</html>

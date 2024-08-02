@@ -9,14 +9,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header>  
-    <!-- <header data-cу="header" class="lv12"> -->
-    <div class="header_inner">
-        <h1>Онлайн радіо</h1>
-        <a class="header_logo">
+    <div class="grid_container">
+     <header>  
+          <!-- <header data-cу="header" class="lv12"> -->
+       <div class="header_inner">
+        <!-- <h1>Онлайн радіо</h1> -->
+        <a href="/" class="header_logo">
             <img class="logo-img" alt="logo" title="logo" src="assets/icons/logo.jpg">
         </a>
-       - <nav class="header_nav">
+        <nav class="header_nav">
+           <div class="burger_menu" id="burger_menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+           </div>
+           <div class="header_nav_wrapper" id="header_nav_wrapper">
+            <a class="header_nav_link" href="/News/">Актуально</a>
+            <a class="header_nav_link" href="/Actionen/">Акції</a>
+            <a class="header_nav_link" href="/Event/">Події</a>
+            <a class="header_nav_link" href="/Audio/">Аудіо</a>
+            <a class="header_nav_link" href="/Information/">Мое веб-радіо</a>
+           </div>
+        </nav>
+       <!-- - <nav class="header_nav">
             <div class="header_nav_wrapper">
                 <a class="header_nav_link" href="/news/">Актуально</a>
                 <a class="header_nav_link" href="/actionen/">Акції</a>
@@ -24,7 +39,7 @@
                 <a class="header_nav_link" href="/audio/">Аудіо</a>
                 <a class="header_nav_link" href="/information/.">Мое веб-радіо</a>
             </div>
-        </nav> 
+        </nav>  -->
         <!-- <nav class="nav">
             <ul>
                 <li><a href="#">Актуально</a></li>
@@ -41,6 +56,7 @@
         </div> --> 
     </div>
    </header>
+   <script src="script.js"></script>
    <main class="container">
         <p class="description-txt">Ми намагаемося створити для вас радісний настрій,використовуюче ваші улюблені пісні, спонукаем вас пригадати
             щасливі моменти вашого життя які залишили в вашому серці неперевершені ємощії.</p>
@@ -112,5 +128,6 @@
 
         
     </footer>
+</div>
 </body>
 </html>
