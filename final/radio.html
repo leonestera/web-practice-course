@@ -10,9 +10,9 @@
 </head>
 <body>
     <div class="grid_container">
-     <header>  
+     <header class="header">  
           <!-- <header data-cу="header" class="lv12"> -->
-       <div class="header_inner">
+       <!-- <div class="header_inner"> -->
         <!-- <h1>Онлайн радіо</h1> -->
         <a href="/" class="header_logo">
             <img class="logo-img" alt="logo" title="logo" src="assets/icons/logo.jpg">
@@ -54,10 +54,10 @@
             <span></span>
             <span></span>
         </div> --> 
-    </div>
+    <!-- </div> -->
    </header>
    <script src="script.js"></script>
-   <main class="container">
+   <main class="main">
         <p class="description-txt">Ми намагаемося створити для вас радісний настрій,використовуюче ваші улюблені пісні, спонукаем вас пригадати
             щасливі моменти вашого життя які залишили в вашому серці неперевершені ємощії.</p>
         <section id="play">
@@ -102,7 +102,7 @@
             </article>
         </div>
     </section>
-    <footer id="footer">
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-logo">
             <img src="assets/icons/logo.jpg"alt="logo" style="width: 60px;"> 
@@ -131,3 +131,11 @@
 </div>
 </body>
 </html>
+document.addEventListen(DOMContentLoaded function(){
+    const burger_menu = document.getElementById burger_menu("click")
+    const header_nav_wrapper = document.getElementById header_nav_wrapper("active")
+    document.addEventListen(burger_menu function(){
+        header_nav_wrapper.classList.toggel("active")
+    })
+    
+})

@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     burgerMenu.addEventListener('click', function() {
         navWrapper.classList.toggle('active');
     });
-});
+}); 
 document.addEventListener('DOMContentLoaded', function() {
     var swiper = new swiper('.swiper-container', {
         slidesPerView: 1,
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navigation: {
             nextEl: 'swiper-button-next',
             prevEl: 'swiper-buttom-prev',
-        }
+        },
         breakpoints: {
             768: {
                 slidesPerView: 3,
